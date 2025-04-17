@@ -1,0 +1,22 @@
+{
+  "name": "waymo-promo-tool",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-02-04",
+  "compatibility_flags": ["nodejs_compat"],
+  "kv_namespaces": [
+    // This is the KV namespace for the promo codes
+    // "Deploy to Cloudflare" button will automatically create a new KV namespace
+    // Change `id` if deploying manually
+    {
+      "binding": "PROMO_KV",
+      "id": "bd8cea7821c4454e9862421b1a8c973e"
+    }
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
